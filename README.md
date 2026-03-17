@@ -2,7 +2,7 @@
 
 ## Description
 This laboratory project is a simple web application built with **HTML**, **CSS**, and **JavaScript**.  
-Its purpose is to practice JavaScript fundamentals, DOM manipulation, event handling, and basic interactive behavior without using external frameworks or libraries.
+Its purpose is to practice JavaScript fundamentals, DOM manipulation, event handling, and basic interactive behavior.
 
 
 
