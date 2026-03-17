@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #fcb7d8, #f8c8ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #5a214d;
+}
+
+.subtitle {
+  margin-top: 8px;
+  margin-bottom: 25px;
+  color: #7a4b6a;
+  font-size: 16px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(121, 52, 97, 0.15);
+  text-align: left;
+}
+
+.box h2 {
+  margin-top: 0;
+  color: #5a214d;
+}
+
+.form-inline {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #efbdd4;
+  border-radius: 12px;
+  background: #fff8fc;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #d96aa4;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-inline input {
+  flex: 1;
+  min-width: 220px;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  background: #d85b98;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.retry-btn {
+  display: none;
+}
+
+.state {
+  margin: 10px 0 18px 0;
+  font-weight: bold;
+  color: #7a4b6a;
+}
+
+.message {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #7a4b6a;
+}
+
+.postsContainer {
+  display: grid;
+  gap: 15px;
+}
+
+.card {
+  background: #fff7fb;
+  border: 1px solid #f1cade;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(121, 52, 97, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #5a214d;
+}
+
+.card p {
+  margin-bottom: 10px;
+  color: #4b3b45;
+}
+
+.card small {
+  color: #8a617b;
+}
+
+@media (max-width: 600px) {
+  .posts-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-inline input,
+  .form-inline button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}

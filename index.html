@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Blog</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+      <h1>Mini Blog</h1>
+      <p class="subtitle">Laboratorio 5 - JavaScript</p>
+
+      <section class="box">
+        <h2>Buscar posts</h2>
+        <form id="searchForm" class="form-inline">
+          <input type="text" id="searchInput" placeholder="Buscar post">
+          <button type="submit">Buscar</button>
+          <button type="button" id="btnAll">Ver todos</button>
+        </form>
+      </section>
+
+      <section class="box">
+        <h2>Crear post</h2>
+        <form id="postForm" class="form-column">
+          <input type="text" id="title" placeholder="Título" required>
+          <textarea id="body" placeholder="Contenido" required></textarea>
+          <input type="number" id="userId" placeholder="User ID" required>
+          <button type="submit">Crear post</button>
+        </form>
+        <p id="createMessage" class="message"></p>
+      </section>
+
+      <section class="box">
+        <div class="posts-header">
+          <h2>Posts</h2>
+          <button id="retryBtn" class="retry-btn">Retry</button>
+        </div>
+        <p id="state" class="state">Idle</p>
+        <div id="postsContainer" class="postsContainer"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
