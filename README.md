@@ -7,7 +7,7 @@ Its purpose is to practice JavaScript fundamentals, DOM manipulation, event hand
 
 
 ## Technologies Used
-- HTML5
+- HTML
 - CSS3
 - JavaScript 
 
